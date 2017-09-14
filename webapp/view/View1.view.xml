@@ -1,0 +1,39 @@
+<mvc:View controllerName="odata.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Table id="iTable" items="{/}">
+	     <columns>         
+                 <Column>
+                     <Label text="FirstName" />
+                 </Column>
+                 <Column>
+                     <Label text="LastName" />
+                 </Column>
+                 <Column>
+                    <Label text="BirthDate" />
+                </Column>
+                <Column>
+                    <Label text="Region" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="{FirstName}" />
+                        <Text text="{LastName}"></Text>
+                    <Text text="{BirthDate}"></Text>
+                    <Text text="{Region}"></Text>
+                    </cells>
+                    
+                </ColumnListItem>
+            </items>  
+            
+            </Table> 
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
